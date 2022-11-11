@@ -1,0 +1,53 @@
+/* RESETANDO O CSS  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    --title-color: #fff;
+    --base-color: #333;
+    --base-color-second: #00ff7f;
+}
+/* APLICANDO O FLEXBOX NO CORPO HTML */
+body{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* USANDO VARIAVEIS NO CSS */
+    background: var(--base-color);
+ 
+    /* TRANSFORMANDO "PIXEL-PX" EM REM */
+    font-size: 62.5% ;
+} 
+/* TITULO DA BATERIA */
+h1{
+    color: var(--title-color);
+    margin-bottom: 2rem;
+}
+/* CAIXA PRINCIPAL - keys */
+
+/* APLICANDO UM GRID NO MEU CSS */
+.keys{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+}
+/*  APLICANDO EFEITOS DIV */
+.key{
+  width: 8rem;
+  height: 8rem;
+  border: 0.2rem solid var(--title-color);
+
+  /* APLICANDO FLEXBOX PARA ALINHAR AS LETRAS  */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ /* TAMANHO DAS LETRAS */
+ font-size: 2rem;
+ font-weight: bold;
+ color: white;
+}
